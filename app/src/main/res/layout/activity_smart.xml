@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Show Settings"
         android:id="@+id/SettingsB"
+        android:onClick="showSettings"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
