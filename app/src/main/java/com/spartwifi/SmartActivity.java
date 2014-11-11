@@ -1,17 +1,19 @@
 package com.spartwifi;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.View;
 
 
 public class SmartActivity extends Activity {
 
-   // TextView tView = (TextView)findViewById(R.id.textView);
-
-    /*private BroadcastReceiver receiver = new BroadcastReceiver() {
+    private BroadcastReceiver receiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             int wifiState = intent.getIntExtra(
@@ -20,25 +22,29 @@ public class SmartActivity extends Activity {
 
             switch (wifiState) {
                 case WifiManager.WIFI_STATE_ENABLED:
-                    tView.setText("Connection Enabled");
 
+                    showNetInfo();
 
                     break;
                 case WifiManager.WIFI_STATE_DISABLED:
-                    tView.setText("Connection Disabled");
+
+
 
                     break;
             }
         }
-    };*/
+    };
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_smart);
-       /* this.registerReceiver(this.receiver,
+
+        this.registerReceiver(this.receiver,
                 new IntentFilter(WifiManager.WIFI_STATE_CHANGED_ACTION));
-*/
+
 
     }
 
