@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:text="Show Settings"
         android:id="@+id/SettingsB"
-        android:onClick="showSettings"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
@@ -22,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Connection Disabled"
+        android:text="Connection Network: Disabled"
         android:id="@+id/textView"
         android:layout_above="@+id/SettingsB"
         android:layout_centerHorizontal="true"
